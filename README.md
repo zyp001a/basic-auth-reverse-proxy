@@ -18,7 +18,7 @@ users:
   - username: Angel
     password: Barrera
 EOL
-$ ./basic-auth-reverse-proxy serve
+$ ./basic-auth-reverse-proxy serve  --port 11811 --upstream "http://localhost:8888"
 ```
 
 Then a local server is started. Try to access it:
